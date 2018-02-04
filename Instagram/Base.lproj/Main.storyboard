@@ -290,13 +290,28 @@
                     <view key="view" contentMode="scaleToFill" id="IRG-hW-E6t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQs-8R-84X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YQs-8R-84X" firstAttribute="leading" secondItem="GvY-Qo-9wa" secondAttribute="leading" id="V5a-fV-dcP"/>
+                            <constraint firstItem="YQs-8R-84X" firstAttribute="trailing" secondItem="GvY-Qo-9wa" secondAttribute="trailing" id="a0j-qx-941"/>
+                            <constraint firstItem="YQs-8R-84X" firstAttribute="bottom" secondItem="GvY-Qo-9wa" secondAttribute="bottom" id="aMg-x9-3kN"/>
+                            <constraint firstItem="YQs-8R-84X" firstAttribute="top" secondItem="IRG-hW-E6t" secondAttribute="top" id="nYM-et-NH2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GvY-Qo-9wa"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="YQs-8R-84X" id="g2I-lj-vK1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5db-au-RjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="369" y="-271"/>
+            <point key="canvasLocation" x="368.80000000000001" y="-271.21439280359823"/>
         </scene>
     </scenes>
     <resources>
