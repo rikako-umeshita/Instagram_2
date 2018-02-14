@@ -18,9 +18,6 @@ class PostViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     
-    
-    
-    
     //投稿ボタンをタップしたときに呼ばれるメソッド
     @IBAction func handlePostButton(_ sender: Any) {
         //ImageViewから画像を取得する
@@ -48,6 +45,8 @@ class PostViewController: UIViewController {
         //画面を閉じる
         dismiss(animated: true, completion: nil)
     }
+    
+    
     
     
     override func viewDidLoad() {

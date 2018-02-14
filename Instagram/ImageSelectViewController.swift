@@ -35,11 +35,6 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
         //画面を閉じる
         self.dismiss(animated: true, completion: nil)
     }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        //閉じる
-        picker.dismiss(animated: true, completion: nil)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +60,11 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
             editor.delegate = self
             picker.pushViewController(editor, animated: true)
         }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        //閉じる
+        picker.dismiss(animated: true, completion: nil)
     }
     
     //CLImageEditorで加工が終わったときに呼ばれるメソッド
